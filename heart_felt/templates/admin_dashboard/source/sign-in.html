@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,10 +15,10 @@
     <link href="https://cdn.materialdesignicons.com/4.4.95/css/materialdesignicons.min.css" rel="stylesheet" />
 
     <!-- SLEEK CSS -->
-    <link id="sleek-css" rel="stylesheet" href="assets/css/sleek.css" />
+    <link id="sleek-css" rel="stylesheet" href="{% static 'assets/css/sleek.css' %}" />
 
     <!-- FAVICON -->
-    <link href="assets/img/favicon.png" rel="shortcut icon" />
+    <link href="{% static 'assets/img/favicon.png' %}" rel="shortcut icon" />
 
     <!--
       HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
@@ -27,7 +29,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <script src="assets/plugins/nprogress/nprogress.js"></script>
+    <script src="{% static 'assets/plugins/nprogress/nprogress.js' %}"></script>
   </head>
 
   <body class="" id="body">
@@ -46,14 +48,14 @@
                     </g>
                   </svg>
 
-                  <span class="brand-name">Sleek Dashboard</span>
+                  <span class="brand-name">Admin dashboard</span>
                 </a>
               </div>
             </div>
 
             <div class="card-body p-5">
               <h4 class="text-dark mb-5">Sign In</h4>
-              
+
               <form action="/index.html">
                 <div class="row">
                   <div class="form-group col-md-12 mb-4">
@@ -99,8 +101,8 @@
     </script> -->
 
     <!-- Javascript -->
-    <script src="assets/plugins/jquery/jquery.min.js"></script>
-    <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/sleek.js"></script>
+    <script src="{% static 'assets/plugins/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/plugins/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/sleek.js' %}"></script>
   </body>
 </html>
