@@ -54,7 +54,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'templates/admin_dashboard/source')
+            os.path.join(BASE_DIR, 'templates/admin_dashboard/theme')
         ],
         'APP_DIRS': True,
         'OPTIONS': {
