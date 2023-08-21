@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-h)q=n@a0#ea&7@i5^p_)o99r+^1f7b3$$#en-e4h=xz(@4%x_c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
@@ -54,7 +54,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'templates/admin_dashboard/theme')
+            os.path.join(BASE_DIR, 'templates/admin_dashboard/source'),
+            os.path.join(BASE_DIR, '')
         ],
         'APP_DIRS': True,
         'OPTIONS': {

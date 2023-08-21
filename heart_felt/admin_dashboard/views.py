@@ -5,5 +5,3 @@ from django.contrib import messages
 
 def admin_dashboard(request):
     return render(request, 'index.html')
-
-
