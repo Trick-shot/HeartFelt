@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -5,40 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Sleek Dashboard - Free Bootstrap 4 Admin Dashboard Template and UI Kit. It is very powerful bootstrap admin dashboard, which allows you to build products like admin panels, content management systems and CRMs etc.">
-  
+
     <!-- theme meta -->
     <meta name="theme-name" content="sleek" />
-    
+
     <title>Ecommerce - Sleek Admin Dashboard Template</title>
-    
+
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500|Poppins:400,500,600,700|Roboto:400,500" rel="stylesheet" />
 
     <link href="https://cdn.materialdesignicons.com/4.4.95/css/materialdesignicons.min.css" rel="stylesheet" />
-  
+
     <!-- PLUGINS CSS STYLE -->
-    <link href="assets/plugins/simplebar/simplebar.css" rel="stylesheet" />
-    <link href="assets/plugins/nprogress/nprogress.css" rel="stylesheet" />
-  
+    <link href="{% static 'assets/plugins/simplebar/simplebar.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/plugins/nprogress/nprogress.css" rel="stylesheet" />
+
     <!-- No Extra plugin used -->
     <link href='assets/plugins/jvectormap/jquery-jvectormap-2.0.3.css' rel='stylesheet'>
     <link href='assets/plugins/daterangepicker/daterangepicker.css' rel='stylesheet'>
-    
-    
+
+
     <link href='assets/plugins/toastr/toastr.min.css' rel='stylesheet'>
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
 
     <!-- SLEEK CSS -->
-    <link id="sleek-css" rel="stylesheet" href="assets/css/sleek.css" />
-  
+    <link id="sleek-css" rel="stylesheet" href="{% static 'assets/css/sleek.css'pyth %}" />
+
     <!-- FAVICON -->
-    <link href="assets/img/favicon.png" rel="shortcut icon" />
-  
+    <link href="{% static 'assets/img/favicon.png" rel="shortcut icon" />
+
     <!--
       HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
     -->
@@ -232,7 +233,7 @@
                           </div>
                         </ul>
                       </li>
-                      
+
                       <li class="">
                         <a class="sidenav-item-link" href="card.html">
                           <span class="nav-text">Card</span>
@@ -689,7 +690,7 @@
         ——— PAGE WRAPPER
         ===================================== -->
         <div class="page-wrapper">
-          
+
           <!-- Header -->
           <header class="main-header " id="header">
             <nav class="navbar navbar-static-top navbar-expand-lg">
@@ -1196,7 +1197,7 @@
             </nav>
           </header>
 
-          
+
           <!-- ====================================
           ——— CONTENT WRAPPER
           ===================================== -->
@@ -1207,7 +1208,7 @@
 
 
 
-		
+
                   <!-- Top Statistics -->
                   <div class="row">
                     <div class="col-xl-3 col-sm-6">
@@ -1259,7 +1260,7 @@
 
 		<div class="row">
 			<div class="col-xl-8 col-md-12">
-				
+
                       <!-- Sales Graph -->
                       <div class="card card-default">
                         <div class="card-header">
@@ -1287,7 +1288,7 @@
 			</div>
 
 			<div class="col-xl-4 col-md-12">
-				
+
                   <!-- Doughnut Chart -->
                   <div class="card card-default">
                     <div class="card-header justify-content-center">
@@ -1322,7 +1323,7 @@
 
 		<div class="row">
 			<div class="col-xl-4 col-lg-6 col-12">
-				
+
                   <!-- Polar and Radar Chart -->
                   <div class="card card-default">
                     <div class="card-header justify-content-center">
@@ -1351,7 +1352,7 @@
 			</div>
 
 			<div class="col-xl-4 col-lg-6 col-12">
-				
+
                   <!-- Top Sell Table -->
                   <div class="card card-table-border-none">
                     <div class="card-header justify-content-between">
@@ -1418,7 +1419,7 @@
 			</div>
 
 			<div class="col-xl-4 col-12">
-				
+
                         <!-- Notification Table -->
                         <div class="card card-default">
                           <div class="card-header justify-content-between mb-1">
@@ -1524,7 +1525,7 @@
 
 		<div class="row">
 			<div class="col-12">
-				
+
                   <!-- Recent Order Table -->
                   <div class="card card-table-border-none recent-orders" id="recent-orders">
                     <div class="card-header justify-content-between">
@@ -1684,7 +1685,7 @@
 
 		<div class="row">
 			<div class="col-xl-6">
-				
+
                   <!-- To Do list -->
                   <div class="card card-default todo-table" id="todo">
                     <div class="card-header d-block pb-0 ">
@@ -1803,7 +1804,7 @@
 			</div>
 
 			<div class="col-xl-6">
-				
+
                   <!-- area chart -->
                   <div class="card card-default" >
                     <div class="card-header d-block d-md-flex justify-content-between">
@@ -1846,7 +1847,7 @@
 
 		<div class="row">
 			<div class="col-xl-5">
-				
+
                   <!-- New Customers -->
                   <div class="card card-table-border-none">
                     <div class="card-header justify-content-between ">
@@ -1952,7 +1953,7 @@
 			</div>
 
 			<div class="col-xl-7">
-				
+
                   <!-- Top Products -->
                   <div class="card card-default">
                     <div class="card-header justify-content-between mb-4">
@@ -2029,8 +2030,8 @@
 
       </div> <!-- End Content -->
     </div> <!-- End Content Wrapper -->
-    
-    
+
+
     <!-- Footer -->
     <footer class="footer mt-auto">
       <div class="copyright bg-white">
@@ -2060,12 +2061,12 @@
     <script src="assets/plugins/jquery/jquery.min.js"></script>
     <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/plugins/simplebar/simplebar.min.js"></script>
- 
+
     <script src='assets/plugins/charts/Chart.min.js'></script>
     <script src='assets/js/chart.js'></script>
 
-    
-    
+
+
 
     <script src='assets/plugins/jvectormap/jquery-jvectormap-2.0.3.min.js'></script>
     <script src='assets/plugins/jvectormap/jquery-jvectormap-world-mill.js'></script>
@@ -2075,25 +2076,25 @@
     <script src='assets/plugins/daterangepicker/daterangepicker.js'></script>
     <script src='assets/js/date-range.js'></script>
 
-    
 
-    
-    
-    
-    
+
+
+
+
+
 
     <script src='assets/plugins/toastr/toastr.min.js'></script>
 
-    
 
-    
-    
-    
 
-    
-    
 
-    
+
+
+
+
+
+
+
 
     <script src="assets/js/sleek.js"></script>
   <link href="assets/options/optionswitch.css" rel="stylesheet">

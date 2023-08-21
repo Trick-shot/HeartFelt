@@ -5,5 +5,4 @@ app_name = 'admin_dashboard'
 
 urlpatterns = [
     path('', views.admin_dashboard, name='admin_dashboard'),
-
 ]
