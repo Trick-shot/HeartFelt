@@ -13078,6 +13078,7 @@ label {
 
 .card-default {
   margin-bottom: 1.5rem;
+
 }
 
 .card-default .card-header {
@@ -19550,6 +19551,10 @@ tbody tr td:first-child {
 }
 
 /* Widgets Dropdown */
+.widget-dropdown{
+   overflow:hidden auto;
+}
+
 .widget-dropdown .dropdown-toggle {
   color: #8a909d;
   text-transform: uppercase;
@@ -19907,3 +19912,14 @@ html[dir="rtl"] #toast-container > .toast-success {
 }
 
 /*# sourceMappingURL=sleek.css.map */
+.card{
+ overflow:hidden auto;
+}
+
+.left-sidebar {
+  overflow: hidden auto;
+}
+
+.collapse components #sidebar-menu{
+  overflow:hidden auto;
+}

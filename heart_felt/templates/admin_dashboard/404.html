@@ -1,0 +1,95 @@
+{% load static %}
+{% include 'include/header.html'%}
+
+  <body class="header-fixed sidebar-fixed sidebar-dark header-light" id="body">
+    <script>
+      NProgress.configure({ showSpinner: false });
+      NProgress.start();
+    </script>
+
+    <!-- ====================================
+    ——— WRAPPER
+    ===================================== -->
+    <div class="wrapper">
+
+        <!-- ====================================
+          ——— LEFT SIDEBAR WITH OUT FOOTER
+        ===================================== -->
+
+  {% include 'include/sidebar.html'%}
+
+          <!-- ====================================
+        ——— PAGE WRAPPER
+        ===================================== -->
+        {% include 'include/page-wrapper.html'%}
+
+          <!-- ====================================
+          ——— CONTENT WRAPPER
+          ===================================== -->
+          <div class="content-wrapper">
+            <div class="content">
+            <div class="error-wrapper rounded border bg-white px-5">
+	        <div class="row justify-content-center align-items-center text-center">
+		    <div class="col-xl-4">
+			<h1 class="text-primary bold error-title">404</h1>
+			<p class="pt-4 pb-5 error-subtitle">Looks like something went wrong.</p>
+			<a href="{% url 'admin_dashboard:admin_home' %} " class="btn btn-primary btn-pill">Back to Home</a>
+		</div>
+
+		 <div class="col-xl-6 pt-5 pt-xl-0 text-center">
+			<img src="{% static 'assets/img/lightenning.png' %}" class="img-fluid" alt="Error Page Image">
+         </div>
+	</div>
+</div>
+
+
+
+
+
+      </div> <!-- End Content -->
+    </div> <!-- End Content Wrapper -->
+
+
+    <!-- Footer -->
+   {% include 'include/footer.html' %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="assets/js/sleek.js"></script>
+  <link href="assets/options/optionswitch.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://unpkg.com/sleek-dashboard/dist/assets/js/sleek.bundle.js"></script>
+<script src="assets/options/optionswitcher.js"></script>
+</body>
+</html>
+
