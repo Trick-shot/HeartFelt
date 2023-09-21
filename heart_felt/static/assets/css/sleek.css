@@ -4,6 +4,20 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+
+ .col-xl-4 {
+   overflow: hidden Sauto;
+}
+
+
+
+
+
+
+
+
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -19923,3 +19937,4 @@ html[dir="rtl"] #toast-container > .toast-success {
 .collapse components #sidebar-menu{
   overflow:hidden auto;
 }
+
