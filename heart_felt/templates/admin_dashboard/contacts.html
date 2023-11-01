@@ -1,22 +1,35 @@
 {% load static %}
 {% include 'include/header.html'%}
 
+  <body class="header-fixed sidebar-fixed sidebar-dark header-light" id="body">
+    <script>
+      NProgress.configure({ showSpinner: false });
+      NProgress.start();
+    </script>
+
+    <div id="toaster"></div>
+    <!-- ====================================
+    ——— WRAPPER
+    ===================================== -->
+    <div class="wrapper">
 
 
-<!--&#45;&#45; ====================================-->
-<!--          ——— LEFT SIDEBAR WITH OUT FOOTER-->
-<!--         ===================================== &ndash;&gt;-->
-
-           {% include 'include/sidebar.html'%}
-          <!-- ====================================
-        ——— PAGE WRAPPER
+    <!-- ====================================
+          ——— LEFT SIDEBAR WITH OUT FOOTER
         ===================================== -->
-       {% include 'include/page-wrapper.html'%}
+      {% include 'include/sidebar.html'%}
+
+       <!--PAGE WRAPPER-->
+      {% include 'include/page-wrapper.html'%}
           <!-- ====================================
           ——— CONTENT WRAPPER
           ===================================== -->
           <div class="content-wrapper">
             <div class="content">
+
+              <!--============ ——— RIGHT SIDEBAR====================-->
+              {% include 'include/right-sidebar.html'%}
+
 <div class="breadcrumb-wrapper breadcrumb-contacts">
   <div>
     <h1>Contacts</h1>

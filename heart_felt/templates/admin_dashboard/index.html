@@ -1,6 +1,19 @@
 {% load static %}
 {% include 'include/header.html'%}
 
+  <body class="header-fixed sidebar-fixed sidebar-dark header-light" id="body">
+    <script>
+      NProgress.configure({ showSpinner: false });
+      NProgress.start();
+    </script>
+
+    <div id="toaster"></div>
+    <!-- ====================================
+    ——— WRAPPER
+    ===================================== -->
+    <div class="wrapper">
+
+
     <!-- ====================================
           ——— LEFT SIDEBAR WITH OUT FOOTER
         ===================================== -->
@@ -13,8 +26,11 @@
  <div class="content-wrapper">
             <div class="content">
 
+  <!--====================================
+              ——— RIGHT SIDEBAR
+     =====================================-->
 
-
+              {% include 'include/right-sidebar.html'%}
 
 
 
@@ -840,7 +856,8 @@
       </div> <!-- End Content -->
     </div> <!-- End Content Wrapper -->
 
-  {% include 'include/right-sidebar.html'%}
+
+
     <!-- Footer -->
    {% include 'include/footer.html' %}
 

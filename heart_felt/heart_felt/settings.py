@@ -50,12 +50,14 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'heart_felt.urls'
 
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             os.path.join(BASE_DIR, 'templates'),
-            os.path.join(BASE_DIR, 'templates/admin_dashboard')
+            os.path.join(BASE_DIR, 'templates/admin_dashboard'),
+            os.path.join(BASE_DIR, 'templates/ecommerce')
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -68,7 +70,6 @@ TEMPLATES = [
         },
     },
 ]
-
 WSGI_APPLICATION = 'heart_felt.wsgi.application'
 
 # Database
