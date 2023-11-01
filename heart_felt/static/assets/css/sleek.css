@@ -4,20 +4,6 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-
-
- .col-xl-4 {
-   overflow: hidden Sauto;
-}
-
-
-
-
-
-
-
-
-
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -13092,7 +13078,6 @@ label {
 
 .card-default {
   margin-bottom: 1.5rem;
-
 }
 
 .card-default .card-header {
@@ -19565,10 +19550,6 @@ tbody tr td:first-child {
 }
 
 /* Widgets Dropdown */
-.widget-dropdown{
-   overflow:hidden auto;
-}
-
 .widget-dropdown .dropdown-toggle {
   color: #8a909d;
   text-transform: uppercase;
@@ -19926,15 +19907,3 @@ html[dir="rtl"] #toast-container > .toast-success {
 }
 
 /*# sourceMappingURL=sleek.css.map */
-.card{
- overflow:hidden auto;
-}
-
-.left-sidebar {
-  overflow: hidden auto;
-}
-
-.collapse components #sidebar-menu{
-  overflow:hidden auto;
-}
-
